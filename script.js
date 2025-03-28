@@ -33,7 +33,8 @@ let gravity = 0.1  ;
 
 let gameOver = false;
 let score = 0;
-let highScore = localStorage.getItem("highScore") || 0; // Retrieve high score
+//let highScore = 0;
+
 window.onload = function(){
     board = document.getElementById("board");
     board.height = boardheight;
@@ -110,15 +111,14 @@ function update(){
         context.font = "25px sans-serif";
         context.fillText("Press Space key to restart ", 30, 300);
 
-        context.fillStyle = "white";
-        context.font = "30px sans-serif";
-        context.fillText("High Score: ", 35, 600);
-        if(score>highScore){
-            highScore = score;
-            localStorage.setItem("highScore", highScore); // Store new high score
-       }
-        context.fillText(highScore, 200, 600);
-       }
+       // context.fillStyle = "white";
+        //context.font = "30px sans-serif";
+       // context.fillText("High Score: ", 35, 600);
+        //if(score>highScore){
+          //  highscore = score;
+       //}
+        //context.fillText(highScore, 55, 600);
+       //}
 }
 
 function placePipes(){
