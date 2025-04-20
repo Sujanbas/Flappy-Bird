@@ -50,7 +50,7 @@ window.onload = function () {
     };
 
     topPipeImg = new Image();
-    topPipeImg.src = "./images/toppipe.png";
+    topPipeImg.src = "./images/toppipe.PNG";
 
     bottomPipeImg = new Image();
     bottomPipeImg.src = "./images/bottompipe.png";
